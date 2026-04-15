@@ -1,0 +1,13 @@
+import MainHeader from "./main-header";
+import NavCategories from "./nav-categories";
+import TopHeader from "./top-header";
+
+export default function Header() {
+  return (
+    <section className="space-y-0 md:space-y-1.5">
+      <TopHeader />
+      <MainHeader />
+      <NavCategories />
+    </section>
+  );
+}

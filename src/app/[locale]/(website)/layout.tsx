@@ -4,6 +4,7 @@ import { routing } from "@/i18n/routing";
 import Providers from "@/components/providers";
 import { Almarai } from "next/font/google";
 import { setRequestLocale } from "next-intl/server";
+import Header from "@/components/shared/header";
 
 // Load the Almarai font with the specified weights and subsets
 const almarai = Almarai({
@@ -34,7 +35,10 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body className={`${almarai.className} ${almarai.variable} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
