@@ -1,3 +1,23 @@
 {
-  "home": "Home"
+  "home": "Home",
+  "header": {
+    "offer": "20% off your first order",
+    "placeholder": "What are you looking for?",
+    "login": "Login",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "all-categories": "All Categories",
+    "women": "Women",
+    "men": "Men",
+    "children": "Kids & Toys",
+    "beauty": "Beauty & Fragrances",
+    "sports": "Sports",
+    "home": "Home",
+    "electronics": "Electronics",
+    "shoes": "Shoes",
+    "bags": "Bags",
+    "brands": "Brands",
+    "premium": "Premium",
+    "new-arrivals": "New Arrivals"
+  }
 }

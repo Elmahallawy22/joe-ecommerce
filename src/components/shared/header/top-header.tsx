@@ -1,10 +1,11 @@
 "use client";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/tailwind-merge";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function TopHeader() {
-  // translations hook
+  // translations
+  const t = useTranslations("header");
   const locale = useLocale();
 
   // navigation hooks
@@ -46,7 +47,7 @@ export default function TopHeader() {
             </button>
           </li>
         </ul>
-        <h6 className="text-sm text-red-500">خصم 20% علي اول طلبية</h6>
+        <h6 className="text-sm text-red-500">{t("offer")}</h6>
       </div>
     </div>
   );
