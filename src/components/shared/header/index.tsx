@@ -1,4 +1,5 @@
 import MainHeader from "./main-header";
+import MobNavigations from "./mob-navigations";
 import NavCategories from "./nav-categories";
 import TopHeader from "./top-header";
 
@@ -11,6 +12,8 @@ export default function Header() {
       <MainHeader />
       {/* Navigation Categories */}
       <NavCategories />
+      {/* Mobile Navigations */}
+      <MobNavigations />
     </section>
   );
 }

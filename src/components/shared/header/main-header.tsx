@@ -2,7 +2,6 @@ import Image from "next/image";
 import Search from "./search";
 import { Link } from "@/i18n/navigation";
 import ToggleLanguage from "./toggle-language";
-import MobileMenu from "./mobile-menu";
 import { useTranslations } from "next-intl";
 
 export default function MainHeader() {
@@ -19,7 +18,9 @@ export default function MainHeader() {
     <header className="md:bg-lightGray-100 flex justify-center py-1 md: px-1">
       <div className="container flex justify-between items-center gap-2 lg:gap-4">
         {/* logo */}
-        <Image src="/logo.png" alt="" width={50} height={40} className="w-12 h-8" />
+        <Link href="/">
+          <Image src="/assets/logo.png" alt="" width={50} height={40} className="w-10 h-7 sm:w-12 sm:h-8" />
+        </Link>
         {/* search component */}
         <Search />
         {/* navigation links */}
@@ -35,8 +36,6 @@ export default function MainHeader() {
         </ul>
         {/* language toggle */}
         <ToggleLanguage />
-        {/* mobile menu */}
-        <MobileMenu />
       </div>
     </header>
   );
