@@ -1,5 +1,6 @@
 import { RouteProps } from "@/lib/types/global";
 import { getTranslations } from "next-intl/server";
+import HeroSection from "./_components/hero-section";
 
 export async function generateMetadata({ params }: RouteProps) {
   const { locale } = await params;
@@ -11,9 +12,9 @@ export async function generateMetadata({ params }: RouteProps) {
 }
 
 export default function Home() {
-
   return (
-    <main className="">
+    <main>
+      <HeroSection />
     </main>
   );
 }
