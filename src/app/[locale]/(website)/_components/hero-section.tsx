@@ -1,3 +1,4 @@
+import { useLocale } from "next-intl";
 import Image from "next/image";
 
 const logos = [
@@ -11,9 +12,18 @@ const logos = [
   { name: "Guess", src: "/logos/guess.png" },
   { name: "Lacoste", src: "/logos/lacoste.png" },
   { name: "Mango", src: "/logos/mango.png" },
+  { name: "DeFacto", src: "/logos/defacto.png" },
+  { name: "Adidas", src: "/logos/adidas.png" },
+  { name: "Guess", src: "/logos/guess.png" },
+  { name: "Lacoste", src: "/logos/lacoste.png" },
+  { name: "Mango", src: "/logos/mango.png" },
 ];
 
 export default function HeroSection() {
+  // locale and direction
+  const locale = useLocale();
+  const isRtl = locale === "ar";
+
   return (
     <div className="flex justify-center">
       <div className="container">
@@ -22,8 +32,8 @@ export default function HeroSection() {
         <div className="relative flex w-full overflow-hidden bg-[#eeeeee] py-2">
           <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-linear-to-r from-[#eeeeee] to-transparent z-10" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-linear-to-l from-[#eeeeee] to-transparent z-10" />
-          {/* shared container */}
-          <div className="flex animate-marquee" style={{ width: "max-content" }}>
+          {/* animated container */}
+          <div className={isRtl ? "animate-marquee-rtl" : "animate-marquee"}>
             {/* first group */}
             <div className="flex shrink-0 items-center gap-3 px-3">
               {logos.map((logo, index) => (

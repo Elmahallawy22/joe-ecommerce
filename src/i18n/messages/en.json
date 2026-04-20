@@ -1,5 +1,4 @@
 {
-  "home": "Home",
   "header": {
     "offer": "20% off your first order",
     "placeholder": "What are you looking for?",
@@ -20,5 +19,28 @@
     "brands": "Brands",
     "premium": "Premium",
     "new-arrivals": "New Arrivals"
+  },
+  "home": {
+    "page-title": "Home",
+    "page-description": "Discover unbeatable deals on top brands like Adidas, Zara, and H&M. Shop the latest in electronics, men's fashion, and beauty with discounts up to 70%.",
+    "categories": {
+      "men": "Men's Fashion",
+      "women": "Women's Fashion",
+      "children": "Children's Fashion",
+      "care": "Beauty & Care",
+      "electronics": "Electronics",
+      "mobiles": "Mobiles",
+      "brands": "Brands",
+      "offers": "Offers"
+    },
+    "new-arrivals": {
+      "title": "New Arrivals",
+      "link": "View More",
+      "new-brands": "Latest Brands",
+      "new-women": "Latest Women's Fashion",
+      "new-mobiles": "Latest Mobile Phones",
+      "new-arrived": "Just Arrived",
+      "shop-now": "Shop Now"
+    }
   }
 }
